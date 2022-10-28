@@ -9,6 +9,7 @@ body {
     margin: 0 auto;
     display: block;
     text-align: right;
+    margin-bottom: 16px;
 }
 .aaa img {
     width: 100%;
@@ -33,6 +34,7 @@ body {
 }
 .task-row-wrapper {
     display: flex;
+    margin-top: 16px;
 }
 ul {
     margin:0;
