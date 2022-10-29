@@ -11,7 +11,6 @@ body {
   margin: 0 auto;
   display: block;
   text-align: right;
-  margin-bottom: 16px;
 }
 
 .header__image {
@@ -35,16 +34,21 @@ body {
   margin: 0 auto 0;
 }
 
+.main-container__elem1 {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
 .section__input,
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .section__content-wrapper {
   display: flex;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 ul {
@@ -93,7 +97,7 @@ input[type="text"] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
-  height: 21px;
+  height: 19px;
   padding: 0 9px;
   border: 1px solid #dDd;
   background: #FFF;
