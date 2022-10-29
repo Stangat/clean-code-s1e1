@@ -28,19 +28,21 @@ body {
   }
 
 }
+
 .main-container {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
+.section__input,
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
 
-.task-row-wrapper {
+.section__content-wrapper {
   display: flex;
   margin-top: 16px;
 }
