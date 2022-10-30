@@ -22,7 +22,7 @@ var createNewTaskElement=function(taskString){
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
     //label
-    var label=document.createElement("label");//label
+    var label=document.createElement("span");//label
     //input (text)
     var editInput=document.createElement("input");//text
     //button.section__button_type_edit
@@ -35,7 +35,7 @@ var createNewTaskElement=function(taskString){
     listItem.className="section__section-list-item";
 
     label.innerText=taskString;
-    label.className='section__label';
+    label.className='section__text';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
@@ -87,7 +87,7 @@ var editTask=function(){
     var listItem=this.parentNode;
 
     var editInput=listItem.querySelector('input[type=text]');
-    var label=listItem.querySelector("label");
+    var label=listItem.querySelector("span");
     var editBtn=listItem.querySelector(".section__button_type_edit");
     var containsClass=listItem.classList.contains("section__section-list-item_mode_edit");
     //If class of the parent is .section__section-list-item_mode_edit
@@ -126,7 +126,7 @@ var taskCompleted=function(){
     //Append the task list item to the .section__list section__list_type_completed
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
-    listItem.querySelector(".section__label").classList.add("section__label_type_completed");
+    listItem.querySelector(".section__text").classList.add("section__text_type_completed");
     bindTaskEvents(listItem, taskIncomplete);
 
 }
@@ -139,7 +139,7 @@ var taskIncomplete=function(){
     //Append the task list item to the .section__list section__list_type_todo
     var listItem=this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
-    listItem.querySelector(".section__label").classList.remove("section__label_type_completed");
+    listItem.querySelector(".section__text").classList.remove("section__text_type_completed");
     bindTaskEvents(listItem,taskCompleted);
 }
 
