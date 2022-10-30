@@ -1,6 +1,6 @@
 /* Basic Style */
 
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -51,48 +51,16 @@ body {
   margin-top: 20px;
 }
 
-ul {
+.section__list {
   margin: 0;
   padding: 0px;
 }
 
-li,
-h3 {
+.section__section-list-item {
   list-style: none;
 }
 
-input,
-button {
-  outline: none;
-}
-
-button {
-  background: none;
-  border: 0px;
-  color: #888;
-  font-size: 15px;
-  width: 60px;
-  font-family: Lato, sans-serif;
-  cursor: pointer;
-}
-
-button:hover {
-  color: #3a3A3a;
-}
-
-/* Heading */
-
-h3 {
-  color: #333;
-  font-weight: 700;
-  font-size: 15px;
-  border-bottom: 2px solid #333;
-  padding: 30px 0 10px;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-input[type="text"] {
+.section__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -103,14 +71,41 @@ input[type="text"] {
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
+  outline: none;
 }
 
-input[type="text"]:focus {
+.section__input:focus {
   color: #333;
 }
 
-/* New Task */
+.section__button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+  outline: none;
+}
 
+.section__button:hover {
+  color: #3a3A3a;
+}
+
+/* Heading */
+
+.section__heading {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* New Task */
 
 .section__input_type_add {
   width: 318px;
@@ -118,7 +113,7 @@ input[type="text"]:focus {
 
 /* Task list */
 
-li {
+.section__section-list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -127,22 +122,19 @@ li {
   align-items: center;
 }
 
-li > * {
-  vertical-align: middle;
-}
 
-li > input[type="checkbox"] {
+.section__checkbox {
   margin: 0 10px;
 }
 
-li > span {
+.section__text {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li > input[type="text"] {
+.section__input {
   width: 226px
 }
 
