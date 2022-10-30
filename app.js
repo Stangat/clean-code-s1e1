@@ -41,7 +41,7 @@ var createNewTaskElement=function(taskString){
     checkBox.type="checkbox";
     checkBox.className="section__checkbox";
     editInput.type="text";
-    editInput.className="section__input";
+    editInput.className="section__list-item-input section__list-item-input_invisible";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="section__button section__button_type_edit";
@@ -104,6 +104,8 @@ var editTask=function(){
 
     //toggle .section__section-list-item_mode_edit on the parent.
     listItem.classList.toggle("section__section-list-item_mode_edit");
+    editInput.classList.toggle("section__list-item-input_invisible");
+    label.classList.toggle("section__text_invisible");
 };
 
 
